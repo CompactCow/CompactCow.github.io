@@ -22,7 +22,7 @@ if (win.closed) {
 
 if ((x+dx > (screen.availWidth - w)) || (x+dx < 0)) dx = -dx;
 
-if ((y+dy > (screen.availHeight - h)) || (y+dy < 0)) dy = -dy;
+if ((y+dy > (screen.availHeight - h)) || (y+dy < 0)) {dy = -dy; x += 1};
 
 x += dx;
 y += dy;
