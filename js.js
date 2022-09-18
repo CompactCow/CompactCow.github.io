@@ -7,7 +7,7 @@ var x=0, y=0;
 var win = window.open('image.html', "",
       "width=" + w + ",height=" + h);
       x = (screen.width/2)-(w/2);
-      y = (screen.height/2)-(h/2) - 55;
+      y = (screen.height/2)-(h/2) - 55 + (Math.floor(Math.random() * 100)-50);
 win.moveTo(x,y);
 
 setTimeout(function () {
